@@ -1,0 +1,225 @@
+<!-- Code by Sithranjan & Naythan-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Home | Winter Wisdom</title>
+    <link rel="shortcut icon" type="image/jpg" href="logo.png" />
+    <link href="https://getbootstrap.com/docs/5.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/heroes/">
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Trebuchet MS;
+        scroll-behavior: smooth;
+        min-height: 100vh;
+        overflow-x: hidden;
+        background: linear-gradient(#43d9ff, #9fecff);
+    }
+
+    header {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        padding: 30px 100px;
+        display: flex;
+        left: 0;
+        justify-content: space-between;
+        z-index: 10000;
+        background-color: #43d9ff;
+    }
+
+    header .logo {
+        color: white;
+        font-weight: 700;
+        text-decoration: none;
+        font-size: 2em;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+    
+    header ul li {
+        list-style: none;
+        margin-left: 20px;
+    }
+
+    header ul {
+        
+        justify-content: center;
+        display: flex;
+    }
+
+
+    header ul li a {
+        text-decoration: none;
+        border-radius: 20px;
+        padding: 6px 15px;
+        color: white;
+        
+    }
+
+    header ul li a:hover{
+        background: white;
+        color: rgb(0, 0, 0);
+    }
+    header ul li a.active {
+        background: white;
+        color: rgb(0, 0, 0);
+    }
+
+    h2 {
+        text-align: center;
+        color: white;
+        font-weight: 700;
+        font-size: 80px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-top: 100px;
+    }
+
+    .Quoter{
+        margin-top: 20px;
+        text-align: center;
+    }
+    .Display{
+        margin-top: 20px;
+        text-align: center;
+    }
+    .pleasehelp {
+        text-align: center;
+        margin-top: 120px;
+    }
+    .Naythan{
+        margin-top: 20px;;
+    }
+
+    .btn1 {
+         border-color: grey;
+         font-size: 30px;
+         
+    }
+
+    .btn1:hover {
+         color: #fff;
+        
+    }
+
+    .btn::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 0%;
+        background: #3498db;
+        z-index: -1;
+        transition: 0.8s;
+
+    }
+
+    .btn1::before {
+        top: 0;
+        border-radius: 0 0 50% 50%;
+       
+    }
+
+    .btn1:hover::before {
+        height: 0%;
+    
+    }
+
+    .map {
+        text-align: center;
+        margin-top: 90px;
+    }
+
+    #button-2 {
+    padding: 10px 30px; 
+    margin-top: 40px;
+    font-size: 1.2rem;
+    background-color: rgb(60, 114, 145);
+    color: white; 
+    border: none; 
+    border-radius: 5px;
+    cursor: pointer; 
+    transition: background-color 0.3s, color 0.3s; 
+}
+
+    </style>
+
+    <script>
+
+    var quotes = [
+        'Always give without remembering and always receive without forgetting. - Brian Tracy ',
+        'Giving does not only precede receiving; it is the reason for it. It is in giving that we receive. - Israelmore Ayivor',
+        'It\'s easier to take than to give. It\'s nobler to give than to take. The thrill of taking lasts a day. The thrill of giving lasts a lifetime. - Joan Marques',
+        'Happiness doesn\'t result from what we get, but from what we give. - Ben Carsom',
+        'We make a living by what we get. We make a life by what we give. - Winston Churchill',
+        'Remember that the happiest people are not those getting more, but those giving more. - H. Jackson Brown Jr.',
+        'The meaning of life is to find your gift. The purpose of life is to give it away. - Pablo Picasso',
+        'Service to others is the rent you pay for your room here on earth. - Mohammed Ali',
+        'If you\’re in the luckiest one percent of humanity, you owe it to the rest of humanity to think about the other 99 percent. - Warren Buffett',
+        'Life is all about doing positive elixir trade because profit is sweet even if it comes from deception -OJ',
+        'A wise man should have money in his head, but not in his heart. - Jonathan Swift',
+        'When one gives, two get happy. - Amit Kalantri',
+        'No act of kindness, no matter how small, is ever wasted. - Aesop',
+        'If you\’re in the luckiest one percent of humanity, you owe it to the rest of humanity to think about the other 99 percent. - Warren Buffett',
+        'Think of giving not as a duty, but as a privilege. - John D. Rockefeller Jr.'
+    ]
+    function QuoteGen() {
+        var randomNum = Math.floor(Math.random() * (quotes.length));
+        document.getElementById('Nice').innerHTML = quotes[randomNum];
+    }
+    
+    </script>
+</head>
+
+<body>
+    <header>
+        <a href="Home.html" class="logo">Donation</a>
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="Donation.html" class="active">Donation</a></li>
+            <li><a href="History.html">History</a></li>
+        </ul>
+    </header>
+
+    <div>
+        <h2>Feeling a little generous?</h2>
+    </div>
+
+    <div class="container">
+        <div class="Quoter">
+            <button id="button-2" onclick="QuoteGen()"> Get Inspired</button>
+        </div>
+
+        <div class="Display">
+            <h6 id="Nice"></h6>
+        </div>
+
+        <div class="pleasehelp">
+            <a
+                href="https://www.google.com/maps/search/donation+centers+near+me/@33.1376214,-96.8230519,13z/data=!3m1!4b1?entry=ttu"
+                target="_blank">
+                <button class="btn btn1">Places near you</button>
+            </a>
+        </div>
+    </div>
+
+    <div class="map">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1552.6436792749778!2d-77.04000280191264!3d38.8945435823734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7b7afee8767e9%3A0xbe118709b23982d0!2sAmerican%20Red%20Cross%20-%20National%20Headquarters!5e0!3m2!1sen!2sus!4v1701983114429!5m2!1sen!2sus"
+            width="900" height="450" style="border:0;"></iframe>
+    </div>
+
+    <script
+        src="/docs/5.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

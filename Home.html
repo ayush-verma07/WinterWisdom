@@ -1,0 +1,291 @@
+<!-- Code by Ayush-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Home | Winter Wisdom</title>
+    <link rel="shortcut icon" type="image/jpg" href="logo.png"/>
+<link href="https://getbootstrap.com//docs/5.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/heroes/">
+<style>
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Trebuchet MS;
+    scroll-behavior: smooth;
+}
+body
+{
+    min-height: 100vh;
+    overflow-x: hidden;
+    background: linear-gradient(#43d9ff, #9fecff);
+}
+header
+{
+    position: absoulute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 10000;
+}
+header .logo
+{
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+header ul
+{
+    display: flex;
+    justify-content: center;
+}
+header ul li
+{
+    list-style: none;
+    margin-left: 20px;
+}
+header ul li a
+{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: white;
+    border-radius: 20px;
+}
+header ul li a:hover,
+header ul li a.active
+{
+    background: white;
+    color: rgb(0, 0, 0);
+}
+section
+{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+section::before
+{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top,#ffffff, transparent);
+    z-index: 1000;
+}
+section img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+    z-index: 1;
+}
+#btn
+{
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 30px;
+    border-radius: 40px;
+    background: white;
+    color: orangered;
+    font-size: 1.5em;
+    z-index: 9;
+    transform: translateY(100px);
+}
+.sec
+{
+    position: relative;
+    padding: 100px;
+    background: linear-gradient(to top,#9fecff,#ffffff);
+    z-index: 1000;
+}
+.sec h2
+{
+    font-size: 3.5em;
+    margin-bottom: 10px;
+    color: orangered;
+}
+.sec p
+{
+    font-size: 1em;
+    color: (black);
+}
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+
+  @media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+  }
+  .button {
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    border: solid 1px #20538D;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+    background: rgb(221, 15, 15);
+    color: #FFF;
+    padding: 8px 12px;
+    text-decoration: none;
+  }
+
+body {
+    padding: 0px;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+th,
+td {
+    color: white;
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+#header {
+    background-color: #16a085;
+    color: #fff;
+}
+
+h1 {
+    font-weight: 600;
+    text-align: center;
+    color: #000000b9;
+    padding: 10px 0px;
+}
+
+*, *:before, *:after {
+    box-sizing: border-box;
+    }
+    
+    body {
+    font-family: poppins;
+    margin: 0;
+    display: grid;
+    font-size: 14px;
+    }
+    header p {
+    padding: 50px;
+    text-align: center;
+    color: #bebebe;
+    text-transform: uppercase;
+    font-size: 65px;
+    font-weight: 700;
+    }
+    iframe {
+        display: block;
+        margin: 0 auto;
+     }
+
+</style>
+</head>
+<body>
+    <header>
+      <a href="Home.html" class="logo">Winter Wisdom</a>
+      <ul>
+            <li><a href="Home.html" class="active">Home</a></li>
+            <li><a href="Donation.html">Donation</a></li>
+            <li><a href="History.html">History</a></li>
+        </ul>
+    </header>
+    <section>
+        <img src="https://i.pinimg.com/originals/4c/c0/b0/4cc0b0280886ac8318681906a08220ed.png" id="backdrop">
+        <a href="#sec" id="btn">Explore</a>
+
+    </section>
+
+        <div class="b-example-divider mb-0"></div>
+      </main>
+          <script src="/docs/5.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+          
+          <div class="sec" id="sec">
+          <div class="container col-l-8 px-4 py-5">
+              <div class="col-lg-6">
+                <h1 class="display-5 fw-bold lh-1 mb-3">Play Some Trivia!</h1>
+                <p class="lead">Ever wanted to test your knowledge about diverse holiday traditions? Ever felt lost during a conversation about a different culture? Just want to show off?</p>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                  <button type="button" class="btn btn-primary btn-lg px-4 me-md-2" onclick="window.location.href = 'quiz.html';">PLAY</button>
+                </div>
+              </div>
+          </div>
+
+      <div class="container col-xxl-8 px-4 py-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <div class="col-10 col-sm-8 col-lg-6">
+            <img src="https://dornsife.usc.edu/news/wp-content/uploads/sites/7/2023/04/story-3802-768x432.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+          </div>
+          <div class="col-lg-6">
+            <h1 class="display-5 fw-bold lh-1 mb-3">History of Winter Holidays!</h1>
+            <p class="lead">Explore the rich history of different winter holidays. Click this button to delve into the traditions, origins, and stories that make this time of year just that little more special.</p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+              <button type="button" class="btn btn-primary btn-lg px-4 me-md-2" onclick="window.location.href = 'History.html';">Explore</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+     
+        <div class="container my-5">
+          <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+            <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+              <h1 class="display-4 fw-bold lh-1">Donate Today!</h1>
+              <p class="lead">Join us in making a meaningful impact - your donation helps support vital causes and makes the world a better place. Click on the button below and head on over to our Donation Page!</p>
+              <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
+                <button type="button" class="btn btn-danger" data-mdb-ripple-color="dark" onclick="window.location.href = 'Donation.html';">Donate Right Now</button>
+              </div>
+            </div>
+            <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
+                <img class="rounded-lg-3" src="https://pbs.twimg.com/media/BurJI3vCMAESEZQ.jpg:large" alt="" width="720">
+            </div>
+          </div>
+        </div>
+     
+        <div class="b-example-divider"></div>
+
+          <script src="/docs/5.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+         
+           
+     
+           
+          <script>
+              let Backdrop = document.getElementById('backdrop');
+              let btn = document.getElementById('btn');
+      
+              window.addEventListener('scroll', function(){
+                  let value = window.scrollY;
+                  Backdrop.style.left = value * 0.1 + 'px';
+                  btn.style.marginTop = value * 1.5 + 'px';
+                  header.style.top = value * .50 + 'px';
+              })
+              
+          </script>
+</body>
+</html>
